@@ -20,6 +20,7 @@ button {
   color: var(--main-color);
   padding: 5px;
   width: 80px;
+  cursor: pointer;
 }
 
 .container {
