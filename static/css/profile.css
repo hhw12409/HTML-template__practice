@@ -4,8 +4,9 @@
   --text-color : #6FB9F6;
 }
 
-body, h3, h4, h5 {
+body, h3, h4, h5, div {
   margin: 0px;
+  font-family: 'nanumsquare';
 }
 
 div {
@@ -111,4 +112,21 @@ button {
   width: 25%;
   height: 2px;
   border-radius: 20px;
+}
+
+/* profile속성을 inherit받고 height부분만 재정의 */
+.profile-work {
+  height: 180px;
+}
+
+.profile-work__info {
+  padding: 30px;
+}
+
+.profile-work__info h3 {
+  margin-bottom: 20px;
+}
+
+.profile-work__info span {
+  font-size: 10px;
 }
