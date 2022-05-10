@@ -1,0 +1,114 @@
+:root {
+  --main-color : white;
+  --main-box-shadow : rgba(0, 0, 0, 0.24) 0px 1px 3px;
+  --text-color : #6FB9F6;
+}
+
+body, h3, h4, h5 {
+  margin: 0px;
+}
+
+div {
+  box-sizing: content-box;
+}
+
+button {
+  background-color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--main-color);
+  padding: 5px;
+  width: 80px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  background-color: #F6F8FC;
+  padding: 10px;
+}
+
+.profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: var(--main-box-shadow);
+  background-color: var(--main-color);
+}
+
+.profile-title {
+  display: flex;
+  padding: 30px;
+}
+
+.profile-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  background-color: var(--text-color);
+  color: var(--main-color);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name>span {
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.profile-name>span:nth-child(3) {
+  color: var(--text-color);
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.profile-info {
+  display: flex;
+  padding: 30px;
+}
+
+.profile-info span {
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.profile-info__en {
+  margin-right: 50px;
+}
+
+.progress {
+  margin: 20px 0px;
+}
+
+.progress>h5 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+  width: 70px;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: var(--main-color);
+  box-shadow: var(--main-box-shadow);
+}
+
+.progress-bar>div {
+  background-color: var(--text-color);
+  width: 25%;
+  height: 2px;
+  border-radius: 20px;
+}
