@@ -1,0 +1,82 @@
+:root {
+  --main-color : white;
+  --profile-color : #CED4DA;
+}
+
+body {
+  margin: 0;
+  font-family: 'nanumsquare';
+}
+
+div {
+  box-sizing: content-box;
+}
+
+.container {
+  width: 100%;
+  height: 700px;
+  background-color: #eee;
+  padding-top: 10%;
+}
+
+.card-box {
+  width: 275px;
+  height: 365px;
+  background-color: var(--main-color);
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-box__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+  background-color: var(--profile-color);
+  width: 100%;
+  height: 160px;
+}
+
+.card-box__content {
+  padding: 20px;
+}
+
+.card-news {
+  text-align: center;
+  background-color: skyblue;
+  color: var(--main-color);
+  width: 30px;
+  border-radius: 10px;
+  font-size: 5px;
+  padding: 5px;
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+}
+
+.card-profile__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--profile-color);
+  color: var(--main-color);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.card-prfile__content span {
+  font-size: 10px;
+  display: block;
+}
+
+.card-prfile__content span:nth-child(2) { 
+  color: var(--profile-color);
+  font-size: 10px;
+  display: block;
+  margin-top: 5px;
+}
