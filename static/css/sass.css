@@ -6,4 +6,28 @@
 .sh-list .active:hover {
   background-color: skyblue;
   color: white;
+}
+
+.alert-box__green {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  color: white;
+  background: green;
+}
+
+.alert-box__orange {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  color: white;
+  background: orange;
+}
+
+.alert-box__blue {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  color: white;
+  background: blue;
 }/*# sourceMappingURL=sass.css.map */

@@ -10,3 +10,22 @@
   }
 }
 
+@mixin alert($color) {
+ padding: 5px;
+ border-radius: 5px;
+ border: 1px solid #eee;
+ color: white;
+ background : $color;
+}
+
+.alert-box__green {
+  @include alert(green);
+}
+
+.alert-box__orange {
+  @include alert(orange);
+}
+
+.alert-box__blue {
+  @include alert(blue);
+}
