@@ -30,6 +30,10 @@ hr {
   margin: 20px auto;
 }
 
+i {
+  color: var(--text-color);
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -156,4 +160,23 @@ hr {
   border-radius: 20px;
   padding: 5px;
   margin-right: 5px;
+}
+
+.profile-sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-sign>span {
+  color: var(--text-color);
+}
+
+.profile-sign>div {
+  margin: 10px 0px;
+}
+
+.profile-sign>button {
+  margin-bottom: 10px;
 }
