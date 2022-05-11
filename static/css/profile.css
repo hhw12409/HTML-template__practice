@@ -2,6 +2,7 @@
   --main-color : white;
   --main-box-shadow : rgba(0, 0, 0, 0.24) 0px 1px 3px;
   --text-color : #6FB9F6;
+  --background-color : #F6F8FC;
 }
 
 body, h3, h4, h5, div {
@@ -23,13 +24,19 @@ button {
   cursor: pointer;
 }
 
+hr {
+  width: 100%;
+  border: solid 1px var(--background-color);
+  margin: 20px auto;
+}
+
 .container {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 800px;
-  background-color: #F6F8FC;
+  height: 1300px;
+  background-color: var(--background-color);
   padding: 10px;
 }
 
@@ -118,6 +125,7 @@ button {
 /* profile속성을 inherit받고 height부분만 재정의 */
 .profile-work {
   height: 180px;
+  margin-bottom: 10px;
 }
 
 .profile-work__info {
@@ -128,6 +136,24 @@ button {
   margin-bottom: 20px;
 }
 
-.profile-work__info span {
+.profile-work__info span, p {
   font-size: 10px;
+}
+
+.profile-about {
+  height: 260px;
+  margin-bottom: 20px;
+}
+
+.profile-skills {
+  width: 100%;
+  display: flex;
+  font-size: 10px;
+}
+
+.profile-skills>div {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  margin-right: 5px;
 }
