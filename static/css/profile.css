@@ -101,32 +101,32 @@ i {
 }
 
 .progress {
+  width: 100%;
   margin: 20px 0px;
-}
-
-.progress>h5 {
-  color: var(--text-color);
-  margin-bottom: 10px;
-  width: 70px;
-  text-align: center;
 }
 
 .progress-bar {
   width: 300px;
   height: 2px;
+  margin: auto;
   border-radius: 20px;
   background-color: var(--main-color);
   box-shadow: var(--main-box-shadow);
 }
 
-.progress-bar>div {
+.progress h5 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.progress-bar div {
   background-color: var(--text-color);
   width: 25%;
   height: 2px;
   border-radius: 20px;
 }
 
-/* profile속성을 inherit받고 height부분만 재정의 */
 .profile-work {
   height: 180px;
   margin-bottom: 10px;
@@ -179,4 +179,51 @@ i {
 
 .profile-sign>button {
   margin-bottom: 10px;
+}
+
+@media screen and (min-width : 768px) {
+  .profile {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: var(--main-box-shadow);
+    background-color: var(--main-color);
+  }
+
+  .profile-work {
+    width: 20%;
+    font-size: 10px; 
+  }
+
+  .profile-about {
+    width: 50%;
+    margin: 0px 10px;
+    height: 400px;
+  }
+
+  .profile-work__info>div {
+    margin: 5px;
+  }
+
+  .profile-sign {
+    width: 18%;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .progress-bar {
+    width: 90%;
+    height: 2px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    box-shadow: var(--main-box-shadow);
+  }
+
+  .flex-box {
+    display: flex;
+    justify-content: center;
+  }
 }
