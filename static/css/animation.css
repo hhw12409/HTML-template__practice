@@ -1,0 +1,68 @@
+body {
+  margin: 0px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: skyblue;
+  margin-bottom: 20px;
+}
+
+.shake-button:hover {
+  animation-name: shake;
+  animation-duration: 1s;
+}
+
+.fa-plus:hover {
+  animation-name: shakePlus;
+  animation-duration: 1s;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate( -20deg );
+  }
+  60% {
+    transform: rotate( 20deg );
+  }
+  100% {
+    transform: rotate( 0deg );
+  }
+}
+
+@keyframes shakePlus {
+  10% {
+    transform: rotate( -30deg );
+  }
+  60% {
+    transform: rotate( 30deg );
+    transform: scale(1.3);
+  }
+  100% {
+    transform: rotate(0deg );
+  }
+}
+
+.side-box {
+  background-color: black;
+  width: 250px;
+  height: 500px;
+  padding: 20px;
+  text-align: right;
+  transform: translateX(-200px);
+}
+
+.side-box:hover {
+  text-align: center;
+  transform: translateX(0px);
+  transition: all 1s;
+}
+
+.side-box p {
+  color: white;
+}
+
+
