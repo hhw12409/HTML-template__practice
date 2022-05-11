@@ -1,0 +1,12 @@
+.sh-list {
+  li {
+    list-style: none;
+    padding: 15px;
+    border: 1px solid #eee;
+  }
+  .active:hover {
+    background-color: skyblue;
+    color: white;
+  }
+}
+

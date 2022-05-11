@@ -1,0 +1,9 @@
+.sh-list li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+.sh-list .active:hover {
+  background-color: skyblue;
+  color: white;
+}/*# sourceMappingURL=sass.css.map */
